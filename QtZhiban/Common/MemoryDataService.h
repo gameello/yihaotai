@@ -1,0 +1,75 @@
+#pragma once
+
+#include <QObject>
+#include "MemoryData.h"
+
+class MemoryDataService : public QObject
+{
+	Q_OBJECT
+
+public:
+
+    MemoryDataService();
+    ~MemoryDataService();
+    static MemoryDataService *instance();
+
+	QDate GetcurrDate();
+	void SetcurrDate(QDate currDate);
+
+	// 席位
+	QList<xiweistruct> GetSeatList();
+	void AddSeatNameList(QList<xiweistruct> namelist);
+	QMap<int, xiweistruct> GetSeatMap();
+	void AddSeatNameMap(QMap<int, xiweistruct> nameMap);
+
+	// 当前席位
+	int GetSeatName();
+	void SetCurrSeatName(int currName);
+
+	// 数据库配置表，包含tab页
+	QMap<int, sqlConfig> Getsqlconfig();
+	void SetSqlconfig(QMap<int, sqlConfig>);
+
+	// // 职务
+	// QStringList GetZhiwuList();
+	// void AddZhiwuList(QStringList zhiwuList);
+
+	// 人员
+	// QStringList GetRenyuanList();
+	// void SetRenyuanList(QStringList renmingList);
+	QMap<int, QList<renyuanstruct>>  GetRenyuanStructs();
+	void SetRenyuanStructs(QMap<int, QList<renyuanstruct>> renmingList);
+	QMap<int, QList<QString>> GetRenyuanMap();
+	void SetRenyuanMap(QMap<int, QList<QString>> renyuanmap);
+	QMap<int, QList<QString>> GetZhiwuMap();
+	void SetZhiwuMap(QMap<int, QList<QString>> renyuanmap);
+	
+
+	QHash<QString,QString> GetQmapRenyuanzhiwu();
+	void SetQmapRenyuanzhiwu(QHash<QString, QString>);
+
+	// 获取模板文件信息
+	QString GetTempalteFile(QString fileName) ;
+	void AddTemplateFiles(QString fileName, QString xmlFile) ;
+	QStringList GetTemAllFileNames() ;
+	// 保存当前计划方案文件信息
+	void SavePlanFileInfo(PlanFileInfo info) ;
+	PlanFileInfo & GetPlanFileInfo() ;
+
+	void AddEditingChapter(QString chapter) ;             // 添加正在编辑的章节
+	void DeleteEditingChapter(QString chapter) ;          // 删除正在编辑的章节 
+	void DeleteEditingChapters() ;                        // 关闭计划方案文件的时候，进行清空
+	QList<QString> GetEditingChapter() ;                  // 获取正在编辑的章节
+
+	void SaveEditedChapter(QString chapter, QString content) ;
+	QMap<QString, QString> & GetEditedChapters() ;
+	void DeleteEditedChapters() ;
+
+
+
+private:
+	MemoryData data;
+    static MemoryDataService *_instance;
+};
+
+

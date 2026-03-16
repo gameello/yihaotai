@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/QtZhiban">
+        <file>Resources/MyTitle.css</file>
+        <file>Resources/MyTitle/close.png</file>
+        <file>Resources/MyTitle/close11.png</file>
+        <file>Resources/MyTitle/max.png</file>
+        <file>Resources/MyTitle/min.png</file>
+        <file>Resources/MyTitle/restore.png</file>
+        <file>Resources/MyTitle/titleIcon.png</file>
+    </qresource>
+</RCC>

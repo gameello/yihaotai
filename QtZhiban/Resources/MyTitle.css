@@ -1,0 +1,74 @@
+*{font-family:Microsoft YaHei;}
+
+QLabel#TitleContent
+{
+	color:white;
+	padding-left:3px;
+}
+
+/*最小化按钮*/
+QPushButton#ButtonMin
+{
+    border-image:url(:/QtZhiban/Resources/MyTitle/min.png) 0 81 0 0 ;
+}
+
+QPushButton#ButtonMin:hover
+{
+    border-image:url(:/QtZhiban/Resources/MyTitle/min.png) 0 54 0 27 ;
+}
+
+QPushButton#ButtonMin:pressed
+{
+    border-image:url(:/QtZhiban/Resources/MyTitle/min.png) 0 27 0 54 ;
+}
+
+/*最大化按钮*/
+QPushButton#ButtonMax
+{
+    border-image:url(:/QtZhiban/Resources/MyTitle/max.png) 0 81 0 0 ;
+}
+
+QPushButton#ButtonMax:hover
+{
+    border-image:url(:/QtZhiban/Resources/MyTitle/max.png) 0 54 0 27 ;
+}
+
+QPushButton#ButtonMax:pressed
+{
+    border-image:url(:/QtZhiban/Resources/MyTitle/max.png) 0 27 0 54 ;
+}
+
+/*还原按钮*/
+QPushButton#ButtonRestore
+{
+    border-image:url(:/QtZhiban/Resources/MyTitle/restore.png) 0 81 0 0 ;
+}
+
+QPushButton#ButtonRestore:hover
+{
+    border-image:url(:/QtZhiban/Resources/MyTitle/restore.png) 0 54 0 27 ;
+}
+
+QPushButton#ButtonRestore:pressed
+{
+    border-image:url(:/QtZhiban/Resources/MyTitle/restore.png) 0 27 0 54 ;
+}
+
+/*关闭按钮*/
+QPushButton#ButtonClose
+{
+    border-image:url(:/QtZhiban/Resources/MyTitle/close.png) 0 81 0 0 ;
+    border-top-right-radius:3 ;
+}
+
+QPushButton#ButtonClose:hover
+{
+    border-image:url(:/QtZhiban/Resources/MyTitle/close.png) 0 54 0 27 ;
+    border-top-right-radius:3 ;
+}
+
+QPushButton#ButtonClose:pressed
+{
+    border-image:url(:/QtZhiban/Resources/MyTitle/close.png) 0 27 0 54 ;
+    border-top-right-radius:3 ;
+}

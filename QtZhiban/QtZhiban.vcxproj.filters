@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>qml;cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+    </Filter>
+    <Filter Include="00_Common">
+      <UniqueIdentifier>{a6f85fb3-120f-4499-8910-439340dc0802}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00_Database">
+      <UniqueIdentifier>{ff568380-c73b-4392-9253-ce76baf42793}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00_Log">
+      <UniqueIdentifier>{f5b78a4a-0960-49c0-9b5e-33fd2bc2a503}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02_PlanParse">
+      <UniqueIdentifier>{9ac3470d-2f01-494b-b598-978c13bed0b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00_Tip">
+      <UniqueIdentifier>{5c4e4905-a24e-4056-af5f-5b3b9008942e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00_Ui">
+      <UniqueIdentifier>{512c66df-ed82-46b0-8fa5-4f5d00ca99e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00_Ui\Color">
+      <UniqueIdentifier>{533695a1-6496-4bb9-95b1-95026604b8ca}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="QtZhiban.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <ClCompile Include="QtZhiban.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <None Include="QtZhiban.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <ResourceCompile Include="QtZhiban.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+    <QtRcc Include="Resources\images.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <QtRcc Include="Resources\qm.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <QtRcc Include="Resources\qss.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Database\ConnectionPool.cpp">
+      <Filter>00_Database</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\global.cpp">
+      <Filter>00_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\MemoryData.cpp">
+      <Filter>00_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\MemoryDataService.cpp">
+      <Filter>00_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\SettingService.cpp">
+      <Filter>00_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Utils.cpp">
+      <Filter>00_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Log\QtCLog.cpp">
+      <Filter>00_Log</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\CheckBoxHeaderView.cpp">
+      <Filter>00_Ui</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\CustomLineEdit.cpp">
+      <Filter>00_Ui</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\FramelessDialog.cpp">
+      <Filter>00_Ui</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\FramelessWidget.cpp">
+      <Filter>00_Ui</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\ModalDialog.cpp">
+      <Filter>00_Ui</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\ModalessDialog.cpp">
+      <Filter>00_Ui</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\Color\ColorComboBox.cpp">
+      <Filter>00_Ui\Color</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\Color\MyColorDialog.cpp">
+      <Filter>00_Ui\Color</Filter>
+    </ClCompile>
+    <ClCompile Include="Tip\MessageDialog.cpp">
+      <Filter>00_Tip</Filter>
+    </ClCompile>
+    <ClCompile Include="Tip\MessagePanel.cpp">
+      <Filter>00_Tip</Filter>
+    </ClCompile>
+    <ClCompile Include="Tip\MessageTipService.cpp">
+      <Filter>00_Tip</Filter>
+    </ClCompile>
+    <ClCompile Include="Tip\TipPanel.cpp">
+      <Filter>00_Tip</Filter>
+    </ClCompile>
+    <ClCompile Include="PlanParse\BlockUserData.cpp">
+      <Filter>02_PlanParse</Filter>
+    </ClCompile>
+    <ClCompile Include="PlanParse\ContentEntity.cpp">
+      <Filter>02_PlanParse</Filter>
+    </ClCompile>
+    <ClCompile Include="PlanParse\PlanTemplate.cpp">
+      <Filter>02_PlanParse</Filter>
+    </ClCompile>
+    <ClCompile Include="PlanParse\XMLPlanParse.cpp">
+      <Filter>02_PlanParse</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\MyTitleBar.cpp">
+      <Filter>00_Ui</Filter>
+    </ClCompile>
+    <ClCompile Include="Login.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\IdGenerateHelper.cpp">
+      <Filter>00_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="PlanParse\ImageBrowseWidget.cpp">
+      <Filter>02_PlanParse</Filter>
+    </ClCompile>
+    <ClCompile Include="PlanParse\TextMaterialWidget.cpp">
+      <Filter>02_PlanParse</Filter>
+    </ClCompile>
+    <ClCompile Include="PlanParse\treeitem.cpp">
+      <Filter>02_PlanParse</Filter>
+    </ClCompile>
+    <ClCompile Include="PlanParse\treemodel.cpp">
+      <Filter>02_PlanParse</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="QtZhiban.ui">
+      <Filter>Source Files</Filter>
+    </QtUic>
+    <QtUic Include="Tip\MessageDialog.ui">
+      <Filter>00_Tip</Filter>
+    </QtUic>
+    <QtUic Include="Tip\MessagePanel.ui">
+      <Filter>00_Tip</Filter>
+    </QtUic>
+    <QtUic Include="Tip\TipPanel.ui">
+      <Filter>00_Tip</Filter>
+    </QtUic>
+    <QtUic Include="Login.ui">
+      <Filter>Source Files</Filter>
+    </QtUic>
+    <QtUic Include="PlanParse\ImageBrowseWidget.ui">
+      <Filter>02_PlanParse</Filter>
+    </QtUic>
+    <QtUic Include="PlanParse\TextMaterialWidget.ui">
+      <Filter>02_PlanParse</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="QtZhiban.h">
+      <Filter>Source Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Common\MemoryDataService.h">
+      <Filter>00_Common</Filter>
+    </QtMoc>
+    <QtMoc Include="Common\SettingService.h">
+      <Filter>00_Common</Filter>
+    </QtMoc>
+    <QtMoc Include="Log\QtCLog.h">
+      <Filter>00_Log</Filter>
+    </QtMoc>
+    <QtMoc Include="Ui\CheckBoxHeaderView.h">
+      <Filter>00_Ui</Filter>
+    </QtMoc>
+    <QtMoc Include="Ui\CustomLineEdit.h">
+      <Filter>00_Ui</Filter>
+    </QtMoc>
+    <QtMoc Include="Ui\FramelessDialog.h">
+      <Filter>00_Ui</Filter>
+    </QtMoc>
+    <QtMoc Include="Ui\FramelessWidget.h">
+      <Filter>00_Ui</Filter>
+    </QtMoc>
+    <QtMoc Include="Ui\ModalDialog.h">
+      <Filter>00_Ui</Filter>
+    </QtMoc>
+    <QtMoc Include="Ui\ModalessDialog.h">
+      <Filter>00_Ui</Filter>
+    </QtMoc>
+    <QtMoc Include="Ui\Color\ColorComboBox.h">
+      <Filter>00_Ui\Color</Filter>
+    </QtMoc>
+    <QtMoc Include="Ui\Color\MyColorDialog.h">
+      <Filter>00_Ui\Color</Filter>
+    </QtMoc>
+    <QtMoc Include="Tip\MessageDialog.h">
+      <Filter>00_Tip</Filter>
+    </QtMoc>
+    <QtMoc Include="Tip\MessagePanel.h">
+      <Filter>00_Tip</Filter>
+    </QtMoc>
+    <QtMoc Include="Tip\MessageTipService.h">
+      <Filter>00_Tip</Filter>
+    </QtMoc>
+    <QtMoc Include="Tip\TipPanel.h">
+      <Filter>00_Tip</Filter>
+    </QtMoc>
+    <QtMoc Include="PlanParse\PlanTemplate.h">
+      <Filter>02_PlanParse</Filter>
+    </QtMoc>
+    <QtMoc Include="PlanParse\XMLPlanParse.h">
+      <Filter>02_PlanParse</Filter>
+    </QtMoc>
+    <QtMoc Include="Ui\MyTitleBar.h">
+      <Filter>00_Ui</Filter>
+    </QtMoc>
+    <QtMoc Include="Login.h">
+      <Filter>Source Files</Filter>
+    </QtMoc>
+    <QtMoc Include="PlanParse\ImageBrowseWidget.h">
+      <Filter>02_PlanParse</Filter>
+    </QtMoc>
+    <QtMoc Include="PlanParse\TextMaterialWidget.h">
+      <Filter>02_PlanParse</Filter>
+    </QtMoc>
+    <QtMoc Include="PlanParse\treemodel.h">
+      <Filter>02_PlanParse</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Database\ConnectionPool.h">
+      <Filter>00_Database</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\global.h">
+      <Filter>00_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\IdGenerateHelper.h">
+      <Filter>00_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\MemoryData.h">
+      <Filter>00_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\publicinterface_global.h">
+      <Filter>00_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Utils.h">
+      <Filter>00_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="PlanParse\BlockUserData.h">
+      <Filter>02_PlanParse</Filter>
+    </ClInclude>
+    <ClInclude Include="PlanParse\ContentEntity.h">
+      <Filter>02_PlanParse</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="PlanParse\treeitem.h">
+      <Filter>02_PlanParse</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\MyTitle\titleIcon.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qss/docktree.qss</file>
+        <file>qss/framelessdialog.qss</file>
+        <file>qss/mainframe.qss</file>
+        <file>qss/scenewidget.qss</file>
+        <file>qss/modaldialog.qss</file>
+    </qresource>
+</RCC>
